@@ -3,59 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Junyi (Stephen) Li - Portfolio</title>
+  <title>Ragnor Wu - Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
+
 <body>
 
   <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#compositions">Compositions</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#contacts">Contact</a></li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ragnor Wu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#compositions">Compositions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
   <!-- About Section -->
-  <section id="about">
-    <h1>About Me</h1>
-    <p>Hi, I'm Junyi (Stephen) Li, a Computer Science student at NYU Shanghai with a minor in Computer System Engineering and Mathematics. I am passionate about technology, especially the fields that intersect with my studies. Outside academics, I dedicate my spare time to music production and composition, where I explore the creative and technical sides of music.</p>
-  </section>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;", id = "about"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p class="name" style="text-align: center;">
+                Wenluetao (Ragnor) Wu
+
+                </p>
+                <p> I am an undergraduate student from NYU Shanghai...
+                </p>
+
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/Ragnor_Wu.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/Ragnor_Wu.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody>
+    </table>
 
   <!-- Compositions Section -->
-  <section id="compositions">
-    <h2>Compositions</h2>
-    <p>Below are some of my original compositions. I enjoy experimenting with different sounds and techniques to create unique musical experiences.</p>
-    <ul>
-      <li>Composition Title 1 - <a href="link_to_music">Listen</a></li>
-      <li>Composition Title 2 - <a href="link_to_music">Listen</a></li>
-      <li>Composition Title 3 - <a href="link_to_music">Listen</a></li>
-    </ul>
+  <section id="compositions" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Compositions</h2>
+      <p>Here are some of my music compositions. I love experimenting with different genres and styles to create unique musical pieces.</p>
+      <ul class="list-group">
+        <li class="list-group-item">Composition Title 1 - <a href="link_to_music">Listen</a></li>
+        <li class="list-group-item">Composition Title 2 - <a href="link_to_music">Listen</a></li>
+        <li class="list-group-item">Composition Title 3 - <a href="link_to_music">Listen</a></li>
+      </ul>
+    </div>
   </section>
 
   <!-- Publications Section -->
-  <section id="publications">
-    <h2>Publications</h2>
-    <p>Some of my recent publications and projects that reflect my academic and technical interests.</p>
-    <ul>
-      <li>Publication Title 1 - <a href="link_to_publication">Read More</a></li>
-      <li>Publication Title 2 - <a href="link_to_publication">Read More</a></li>
-      <li>Publication Title 3 - <a href="link_to_publication">Read More</a></li>
-    </ul>
+  <section id="publications" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Publications</h2>
+      <p>Below are some of my academic and personal publications.</p>
+      <ul class="list-group">
+        <li class="list-group-item">Publication Title 1 - <a href="link_to_publication">Read More</a></li>
+        <li class="list-group-item">Publication Title 2 - <a href="link_to_publication">Read More</a></li>
+        <li class="list-group-item">Publication Title 3 - <a href="link_to_publication">Read More</a></li>
+      </ul>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contacts">
-    <h2>Contact</h2>
-    <p>Feel free to reach out to me via email for any inquiries or collaboration opportunities.</p>
-    <p>Email: <a href="mailto:your_email@nyu.edu">your_email@nyu.edu</a></p>
-    <p>Social Media: 
-      <a href="https://linkedin.com/in/yourprofile">LinkedIn</a> |
-      <a href="https://github.com/yourusername">GitHub</a>
-    </p>
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact</h2>
+      <p class="text-center">Feel free to reach out to me via email for any inquiries or collaborations.</p>
+      <p class="text-center">Email: <a href="mailto:your_email@nyu.edu">your_email@nyu.edu</a></p>
+      <p class="text-center">Social Media: 
+        <a href="https://linkedin.com/in/yourprofile" class="me-3">LinkedIn</a>
+        <a href="https://github.com/yourusername">GitHub</a>
+      </p>
+    </div>
   </section>
 
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
