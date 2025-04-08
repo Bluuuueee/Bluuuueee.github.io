@@ -1,17 +1,11 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
-
-
 body {
-  background: #fbeff4;
+  background: #FBF6EF;
 }
 a {
   color: #726d6d;
-}
-a:focus,
-a:hover {
-  color: #d6a3c9;
-  text-decoration: none;
 }
 
 p {
@@ -20,29 +14,31 @@ p {
 }
 
 h1 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 40px;
-  padding-bottom: 20px
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    padding-bottom: 20px
 }
 
 h2 {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: "Ubuntu Mono", monospace;
   font-size: 28px;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 /*HEADER & NAV*/
 
 .header {
   width: 100%;
-  background: #fbeff4;
+  background: #FBF6EF;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
+  /*For animation dark mode*/
   transition: .4s;
+  /*border-bottom: 2px solid rgba(0, 0, 0, 0.1);*/
 }
 
 .nav {
@@ -79,14 +75,14 @@ h2 {
 
 .nav li.active {
   background-color: white;
-  color: rgb(203, 132, 208);
+  color: orange;
   filter: drop-shadow(0 2px 15px rgba(105, 105, 105, 0.1));
-  text-decoration: none;
+  text-decoration: line-through;
   transition: all 0.3s ease;
 }
 
 .nav li:hover {
-  color: rgb(203, 132, 208);
+  color: orange;
   /*text-decoration: none;*/
   background-color: transparent;
   transition: all 0.3s ease;
@@ -149,6 +145,18 @@ h2 {
 .column {
   width: fit-content;
 }
+
+/*.box > * {*/
+/*    border:1px solid green;*/
+/*}*/
+
+/*.container > * {*/
+/*    border:1px solid red;*/
+/*}*/
+
+/*.column > * {*/
+/*    border:1px solid blue;*/
+/*}*/
 
 .sticker {
   position: absolute;
@@ -583,6 +591,12 @@ th {
 }
 
 .tab-links li a {
+  /*text-decoration: none;*/
+  /*padding: 8px 12px;*/
+  /*background-color: #f2f2f2;*/
+  /*border: 1px solid #ccc;*/
+  /*border-radius: 4px;*/
+  /*color: #333;*/
   font-family: "Montserrat", sans-serif;
   font-size: 1vw;
   font-weight: 400;
@@ -601,6 +615,15 @@ th {
   flex-direction: row;
   width: 100%;
 }
+/*!* Style for the tab content *!*/
+/*.tab-content {*/
+/*  display: none;*/
+/*}*/
+
+/*.tab-content.active {*/
+/*  display: block;*/
+/*}*/
+
 
 .swiper-slide {
   position: relative;
@@ -780,6 +803,14 @@ th {
   .expander .case {
     width: 100%;
   }
+
+  /*.expander .pill {*/
+  /*  display: flex;*/
+  /*  justify-content: center;*/
+  /*  align-items: center;*/
+  /*  width: 100%;*/
+  /*  height: 40px;*/
+  /*}*/
 
   .grid {
     grid-template-columns: repeat(1, 1fr);
